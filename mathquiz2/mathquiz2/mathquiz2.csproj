@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76D51720-1D14-4F09-A3C5-769B4537B67C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>mathquiz2</RootNamespace>
+    <AssemblyName>mathquiz2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculadoraBasica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculadoraBasica.Designer.cs">
+      <DependentUpon>CalculadoraBasica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculadoraDePotencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculadoraDePotencias.Designer.cs">
+      <DependentUpon>CalculadoraDePotencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculadoraDeRaices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculadoraDeRaices.Designer.cs">
+      <DependentUpon>CalculadoraDeRaices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaAyuda.Designer.cs">
+      <DependentUpon>FormaAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaCreditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaCreditos.Designer.cs">
+      <DependentUpon>FormaCreditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSudoku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSudoku.Designer.cs">
+      <DependentUpon>FormSudoku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HardGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HardGame.Designer.cs">
+      <DependentUpon>HardGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Juego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego.Designer.cs">
+      <DependentUpon>Juego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CalculadoraBasica.resx">
+      <DependentUpon>CalculadoraBasica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculadoraDePotencias.resx">
+      <DependentUpon>CalculadoraDePotencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculadoraDeRaices.resx">
+      <DependentUpon>CalculadoraDeRaices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaAyuda.resx">
+      <DependentUpon>FormaAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaCreditos.resx">
+      <DependentUpon>FormaCreditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSudoku.resx">
+      <DependentUpon>FormSudoku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HardGame.resx">
+      <DependentUpon>HardGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Juego.resx">
+      <DependentUpon>Juego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gatitoreference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink Wallpaper Laptop DF8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
